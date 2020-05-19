@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SelectedMovieController">
+   <top>
+      <AnchorPane prefHeight="550.0" prefWidth="400.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ButtonBar layoutX="23.0" layoutY="478.0" prefHeight="58.0" prefWidth="216.0">
+               <buttons>
+                <Button fx:id="account" mnemonicParsing="false" onAction="#goToAccount" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: lime;" />
+                <Button fx:id="movie" mnemonicParsing="false" onAction="#goToMovie" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: lime;" />
+                  <Button fx:id="search" mnemonicParsing="false" onAction="#goToSearch" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: lime;" />
+                  <Button fx:id="list" mnemonicParsing="false" onAction="#goToList" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: lime;" />                  
+               </buttons>
+            </ButtonBar>
+            <Label fx:id="name" layoutX="50.0" layoutY="32.0" prefHeight="27.0" prefWidth="316.0" text="Titulo" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label fx:id="date" layoutX="50.0" layoutY="67.0" prefHeight="27.0" prefWidth="316.0" text="Fecha" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="director" layoutX="50.0" layoutY="195.0" prefHeight="27.0" prefWidth="316.0" text="Director:" textAlignment="CENTER" textFill="#00c206">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="producer" layoutX="50.0" layoutY="245.0" prefHeight="27.0" prefWidth="316.0" text="Productor:" textAlignment="CENTER" textFill="#00c206">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="qualification" layoutX="50.0" layoutY="291.0" prefHeight="27.0" prefWidth="316.0" text="Calificación:" textAlignment="CENTER" textFill="#00c206">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="actor" layoutX="50.0" layoutY="108.0" prefHeight="27.0" prefWidth="316.0" text="Actor:" textAlignment="CENTER" textFill="#00c206">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="popularity" layoutX="50.0" layoutY="340.0" prefHeight="27.0" prefWidth="316.0" text="Popularidad:" textAlignment="CENTER" textFill="#00c206">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="agregarLista" layoutX="143.0" layoutY="387.0" mnemonicParsing="false" style="-fx-background-color: lime;" text="Agregar a la Lista" />
+            <Label fx:id="genre" layoutX="50.0" layoutY="151.0" prefHeight="27.0" prefWidth="316.0" text="Género:" textAlignment="CENTER" textFill="#00c206">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="66.0" layoutY="428.0" mnemonicParsing="false" onAction="#goToRecommendedByMovie" style="-fx-background-color: lime;" text="Ver recomendaciones según esta película" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
